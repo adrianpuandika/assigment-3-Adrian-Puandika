@@ -1,0 +1,30 @@
+{
+  "name": "assignment-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cross-env NODE_ENV=test jest --detectOpenHandles --watchAll --verbose",
+    "db:create:test": "cross-env NODE_ENV=test npx sequelize-cli db:create",
+    "db:create:development": "cross-env NODE_ENV=development npx sequelize-cli db:create",
+    "db:migration:test": "cross-env NODE_ENV=test npx sequelize-cli db:migrate",
+    "db:migration:development": "cross-env NODE_ENV=development npx sequelize-cli db:migrate"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jest": "^29.7.0",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.6.2",
+    "sequelize": "^6.33.0",
+    "supertest": "^6.3.3"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.6.1"
+  }
+}
